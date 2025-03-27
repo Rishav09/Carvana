@@ -13,6 +13,10 @@ from geopy.distance import geodesic
 from ortools.constraint_solver import pywrapcp, routing_enums_pb2
 import folium
 from streamlit_folium import st_folium
+import streamlit as st
+
+st.sidebar.title("Navigation")
+st.sidebar.markdown("Use the options below to interact with the app.")
 
 import pandas as pd
 
