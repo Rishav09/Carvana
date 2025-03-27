@@ -14,6 +14,11 @@ from ortools.constraint_solver import pywrapcp, routing_enums_pb2
 import folium
 from streamlit_folium import st_folium
 
+import pandas as pd
+
+# Load the delivery locations from a CSV file
+locations = pd.read_csv("carvana_delivery_locations.csv")
+
 def compute_distance_matrix(locations):
     num_locations = len(locations)
     distance_matrix = np.zeros((num_locations, num_locations))
