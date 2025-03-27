@@ -17,6 +17,7 @@ import streamlit as st
 
 st.sidebar.title("Navigation")
 st.sidebar.markdown("Use the options below to interact with the app.")
+num_vehicles = st.sidebar.slider("Select number of trucks", 1, 5, 3)
 
 import pandas as pd
 
